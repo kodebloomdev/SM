@@ -15,6 +15,7 @@ import Department from './components/department/Department';
 import ContactUs from "./components/contactus/ContactUs";
 import OurInspiration from './components/ourinspiration/OurInspiration';
 import Navbar from "./header/Navbar"; // Correct import path
+
 import CoreValues from './components/About/CoreValues';
 import Principal from './components/About/Principal';
 import AnnualReport from './components/About/AnnualReport';
