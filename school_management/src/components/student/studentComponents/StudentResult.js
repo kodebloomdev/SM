@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const studentResults = {
   "01": { department: "cse", marks: "85%" },
   "02": { department: "ece", marks: "78%" },
-  "03": { department: "it", marks: "92%" },
+  "03": { department: "it", marks: "92%" },                 //added three sections
 };
 
 export default function StudentResult() {
