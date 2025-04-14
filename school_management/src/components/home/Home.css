@@ -1,0 +1,129 @@
+.image-slider {
+    flex: 1; 
+    max-width: 65%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 350px; 
+  }
+  
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slides img {
+    width: 100%;
+    flex-shrink: 0;
+    height: 100%; 
+    object-fit: cover; 
+  }
+  
+  .slider-dots {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .slider-dots span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background: #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .slider-dots span.active {
+    background: #003366;
+  }
+
+.announcement-section {
+    margin-top: 3%;
+    flex: 0 0 30%;
+    padding: 20px;
+    background-color: #003366;
+    color: white;
+    border-radius: 10px;
+  }
+  
+  .announcement-box {
+    overflow: hidden;
+  }
+  
+  .announcement-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .announcement-list li {
+    margin-bottom: 15px;
+    justify-content:  start;
+  }
+  
+  .announcement-list li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-weight:500;
+    
+  }
+  
+  .announcement-list li a:hover {
+    color: #0056b3;
+  }
+  
+  /* Automatic scrolling effect */
+  .announcement-list {
+    display: flex;
+    flex-direction: column;
+    animation: scroll-announcement 10s linear infinite;
+  }
+  
+  @keyframes scroll-announcement {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+  
+  .news-section {
+    margin: 50px 0;
+    background-color: #003366;
+    border: 1px solid #ddd;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    height: 40px;
+  }
+  
+  .news-container {
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    top: 17%;
+  }
+  
+  .news-text {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll-text 30s linear infinite;
+    font-size: 16px;
+    color: #ddd;
+    font-weight: 600;
+  }
+  
+  @keyframes scroll-text {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
